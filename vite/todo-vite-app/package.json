@@ -1,0 +1,16 @@
+{
+  "name": "todo-vite-app",
+  "version": "1.0.0",
+  "description": "Todo app using vite javascript modular frontend with appwrite as baas tool.",
+  "scripts": {
+    "dev": "vite dev"
+  },
+  "author": "Sundeeep Dasari",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^6.4.1"
+  },
+  "dependencies": {
+    "appwrite": "^21.4.0"
+  }
+}
