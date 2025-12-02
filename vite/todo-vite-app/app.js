@@ -1,7 +1,5 @@
 import { Client, TablesDB, ID } from "appwrite";
 
-
-
 const client = new Client()
     .setProject("692d1fd2001bfcf9de42")
     .setEndpoint("https://sgp.cloud.appwrite.io/v1")
