@@ -9,18 +9,17 @@ Rectangle.prototype.getArea = function(){
     console.log(area);
 }
 
-
-
 // const phoneScreen = new Rectangle(700, 350);
 
 function Square(side){
     this.side = side;
     Rectangle.call(this, side, side);
 }
+console.log(Square.prototype);
 
-// console.log(Rectangle.prototype);
-Square.prototype = Object.create(Rectangle.prototype);
-// console.log(Square.prototype);
+Square.prototype = Object.create(Rectangle.prototype) 
+
+// Square.prototype -> {}.__proto__ -> Rectangle.prototype
 
 Square.prototype.constructor = Square;
 
@@ -28,6 +27,8 @@ Square.prototype.logArea = function(){
     this.getArea()
 }
 
-
 const appleWatchScreen = new Square(150);
 console.log(appleWatchScreen)
+
+//Don't do this:  Don't give the reference of Rectangle prototype
+    // Square.prototype = Object.assign(Rectangle.prototype); // Shallow copy of Rectangle.prototype
