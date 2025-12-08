@@ -1,13 +1,11 @@
-// React component is just a normal js function, which returns/ renders JSX Expression.
+import HomePage from "./pages/HomePage.jsx";
 
-import CounterApp from "./components/CounterApp.jsx";
 
 function App(){
 
   return (
     <>
-      <h1>Class Based Component</h1>
-      <CounterApp username={"Sundeeep Dasari"}/> 
+    <HomePage />
     </>
   )
 }
